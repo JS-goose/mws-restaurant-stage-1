@@ -47,6 +47,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -71,9 +72,9 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+    /* width: calc(50% - 80px); */
     height: 100%;
-    /* width: 100%; */
+    width: 100%;
 }
 
 /* Display list items side by side */
@@ -244,8 +245,8 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 100%; 
+  padding: 20px 0;
+  width: 100%;
 }
 #reviews-container {
   padding: 30px 40px 80px;
