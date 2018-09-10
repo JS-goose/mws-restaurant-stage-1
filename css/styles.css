@@ -318,8 +318,6 @@ nav h1 a {
   }
   #breadcrumb {
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
     text-align: center;
   }
   .leaflet-control-zoom.leaflet-bar.leaflet-control {
