@@ -2,6 +2,7 @@
 /* CSS Document */
 :root {
   --dark-orange: #c96f08;
+  --dark-brown: rgb(24, 23, 23);
 }
 body,
 td,
@@ -206,7 +207,7 @@ nav h1 a {
 #restaurants-list li a {
   background-color: var(--dark-orange);
   border-bottom: 3px solid #eee;
-  color: rgb(24, 23, 23);
+  color: var(--dark-brown);
   display: inline-block;
   font-size: 10pt;
   font-weight: 600;
