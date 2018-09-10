@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
-
+:root {
+  --dark-orange: #c96f08;
+}
 body,
 td,
 th,
@@ -188,7 +190,7 @@ nav h1 a {
   min-width: 100%;
 }
 #restaurants-list li h1 {
-  color: #c96f08;
+  color: var(--dark-orange);
   font-family: Arial, sans-serif;
   font-size: 16pt;
   font-weight: 600;
