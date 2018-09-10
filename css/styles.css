@@ -232,11 +232,12 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
+  height: 100%;
   position: fixed;
   right: 0;
-  top: 80px;
+  top: 120px;
   width: 50%;
+  z-index: 0;
 }
 .inside #map {
   background-color: #ccc;
