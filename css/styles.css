@@ -47,7 +47,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
-  width: 100%;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -224,7 +223,7 @@ nav h1 a {
   text-align: center;
 }
 #restaurant-img {
-  width: 90%;
+  width: 100%;
 }
 #restaurant-address {
   font-size: 12pt;
@@ -274,6 +273,9 @@ nav h1 a {
 }
 #reviews-list li p {
   margin: 0 0 10px;
+}
+#restaurant-hours {
+  margin: 0 auto;
 }
 #restaurant-hours td {
   color: #666;
