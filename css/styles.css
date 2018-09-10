@@ -130,8 +130,13 @@ nav h1 a {
   background-color: rgb(187, 185, 185);
 }
 .leaflet-control-attribution.leaflet-control{
-  background-color: #d1d0d0;
-  font-size: 9pt;
+  background-color: #3f3e3e;
+  color: white;
+  font-size: 10pt;
+  font-weight: bold;
+}
+.leaflet-control-attribution.leaflet-control a {
+  color: orange;
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
