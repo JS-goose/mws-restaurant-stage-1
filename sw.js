@@ -1,30 +1,13 @@
-const staticCache = "mws-cache-v1";
-const cacheURLS = ["index.html", "restaurant.html", "/css/style.css", "/js/main.js"];
-
-// self.addEventListener("install", (event)  => {
-//   // event.waitUntil(
-//     caches.open("mws-cache-v1");
-//   // );
-// });
-// // 
-
-// self.addEventListener('active', (cache)=> {
-//   console.log('SW Active!');
-//   return cache.addAll(cacheURLS);
-// });
+let staticCache = 'mws-cache-v1';
+const cacheURLS = ['/', '/index.html', 'css/styles.css', '/js/'];
 
 self.addEventListener('install', (event) => {
-  console.log('Service Worker Installed');
-  event.waitUntil (
+  console.log('installing');
+  event.waitUntil(
     caches.open(staticCache)
     .then((cache) => {
-      console.log("SW - Caching Files");
-      cache.addAll(cacheURLS);
+      console.log('Cache opened');
+      return cache.addAll(cacheURLS);
     })
-    .then(() => self.skipWaiting())
-  )
-});
-
-self.addEventListener('activate', event => {
-  console.log('Service Worker Active');
+  );
 });

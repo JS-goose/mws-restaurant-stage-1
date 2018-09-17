@@ -6,15 +6,19 @@ var markers = []
 
 // Service Worker Registration
 if (navigator.serviceWorker) {
-  navigator.serviceWorker
-    .register('sw.js')
-    .then(reg => {
-      console.log(`Success, service worker registered: ${reg}`);
-    })
-    .catch(err => {
-      console.log(`There was an error: ${err}`);
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
     });
+  });
 }
+
+
+
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
