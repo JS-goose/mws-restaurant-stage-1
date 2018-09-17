@@ -7,5 +7,3 @@ if (navigator.serviceWorker) {
         console.log(`There was an error: ${err}`);
     });
 }
-
-console.log("bacon")
