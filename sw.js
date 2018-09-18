@@ -23,6 +23,7 @@ const cacheURLS = [
   "/img/10.jpg",
 ];
 
+// Service Worker Install
 self.addEventListener("install", event => {
   console.log("Cache opened");
   event.waitUntil(
@@ -31,3 +32,9 @@ self.addEventListener("install", event => {
     })
   );
 });
+
+// Fetch Event
+
+
+
+// Activate Event
