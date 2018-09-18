@@ -1,13 +1,13 @@
 let cacheName = "mws-cache-v1";
 const cacheURLS = [
   "/",
-  "/restaurant.html",
   "/index.html",
+  "/restaurant.html",
   "/css/styles.css",
+  "/data/restaurants.json",
   "/js/dbhelper.js",
   "/js/main.js",
   "/js/restaurant_info.js",
-  "/data/restaurants.json",
   "https://unpkg.com/leaflet@1.3.1/dist/leaflet.css",
   "https://unpkg.com/leaflet@1.3.1/dist/leaflet.js",
   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
