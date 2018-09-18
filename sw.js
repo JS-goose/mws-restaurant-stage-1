@@ -1,4 +1,4 @@
-let staticCache = "mws-cache-v1";
+let cacheName = "mws-cache-v1";
 const cacheURLS = [
   "/",
   "/restaurant.html",
@@ -27,7 +27,7 @@ const cacheURLS = [
 self.addEventListener("install", event => {
   console.log("Cache opened");
   event.waitUntil(
-    caches.open(staticCache).then(cache => {
+    caches.open(cacheName).then(cache => {
       return cache.addAll(cacheURLS);
     })
   );
@@ -42,7 +42,7 @@ self.addEventListener("fetch", event => {
       return fetch(event.request)
         .then(response => {
           const responseClone = response.clone();
-          caches.open(staticCache).then(cache => {
+          caches.open(cacheName).then(cache => {
             cache.put(event.request, responseClone);
           });
           return response;
@@ -58,14 +58,14 @@ self.addEventListener("fetch", event => {
 self.addEventListener("activate", event => {
   console.log("Service worker active");
   event.waitUntil(
-    caches.keys.then(cacheNames => {
+    caches.keys().then(cacheName => {
       return Promise.all(
-        cacheNames
-          .filter(cache => {
-            return cache.startsWith("mws") && cache != staticCache;
+        cacheName
+          .filter(cacheName => {
+            return cacheName.startsWith("mws") && cacheName != cacheName;
           })
-          .map(cache => {
-            return caches.delete(cache);
+          .map(cacheName => {
+            return caches.delete(cacheName);
           })
       );
     })
