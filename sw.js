@@ -34,25 +34,40 @@ self.addEventListener("install", event => {
 });
 
 // Fetch Event
-self.addEventListener("fetch", (event) => {
+self.addEventListener("fetch", event => {
   console.log("Fetch fired");
   event.respondWith(
-    caches.match(event.request).then( (response) => {
+    caches.match(event.request).then(response => {
       if (response) return response;
       return fetch(event.request)
-      .then( (response) => {
-        const responseClone = response.clone();
-        caches.open(staticCache).then( (cache) => {
-          cache.put(event.request, responseClone);
+        .then(response => {
+          const responseClone = response.clone();
+          caches.open(staticCache).then(cache => {
+            cache.put(event.request, responseClone);
+          });
+          return response;
+        })
+        .catch(error => {
+          console.log(`An error occured: ${error}`);
         });
-        return response;
-      })
-      .catch( (error) => {
-        console.log(`An error occured: ${error}`);
-      });
     })
   );
 });
 
-
 // Activate Event
+self.addEventListener("activate", event => {
+  console.log("Service worker active");
+  event.waitUntil(
+    caches.keys.then(cacheNames => {
+      return Promise.all(
+        cacheNames
+          .filter(cache => {
+            return cache.startsWith("mws") && cache != staticCache;
+          })
+          .map(cache => {
+            return caches.delete(cache);
+          })
+      );
+    })
+  );
+});
