@@ -1,4 +1,4 @@
-let cacheName = "mws-cache-v1";
+const cacheName = "mws-cache-v1";
 const cacheURLS = [
   "/",
   "/index.html",
