@@ -173,15 +173,17 @@ nav h1 a {
   padding: 30px 15px 60px;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial, sans-serif;
-  margin: 15px;
-  min-height: 380px;
+  margin: 10px;
+  min-height: 350px;
   padding: 0 30px 25px;
   text-align: left;
   width: 85%;
