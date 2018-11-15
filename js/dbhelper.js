@@ -12,6 +12,12 @@ class DBHelper {
     return 'https://js-goose.github.io/mws-restaurant-stage-1/data/restaurants.json'; 
   }
 
+  // To run locally uncomment the code below
+  /*static get DATABASE_URL() {
+    const port = 8000 // Change this to your server port
+    return `http://localhost:${port}/data/restaurants.json`;
+  }*/
+
   /**
    * Fetch all restaurants.
    */
