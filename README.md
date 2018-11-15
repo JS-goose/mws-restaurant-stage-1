@@ -6,9 +6,13 @@ Here is the [live version of the app](https://js-goose.github.io/mws-restaurant-
 
 Below are some images of the app in action.
 
-[a map image of New York](https://github.com/JS-goose/mws-restaurant-stage-1/blob/master/img/preview1.png)
-[a listing of local restaurants in the New York area](https://github.com/JS-goose/mws-restaurant-stage-1/blob/master/img/preview2.png)
-[a listing of a restaurant in New York called The Dutch](https://github.com/JS-goose/mws-restaurant-stage-1/blob/master/img/preview3.png)
+![a map image of New York](https://github.com/JS-goose/mws-restaurant-stage-1/blob/master/img/preview1.png)
+
+
+![a listing of local restaurants in the New York area](https://github.com/JS-goose/mws-restaurant-stage-1/blob/master/img/preview2.png)
+
+
+![a listing of a restaurant in New York called The Dutch](https://github.com/JS-goose/mws-restaurant-stage-1/blob/master/img/preview3.png)
 
 This app was built with:
 * HTML
