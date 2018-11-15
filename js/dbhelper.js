@@ -7,7 +7,7 @@ class DBHelper {
    * Change this to restaurants.json file location on your server.
    */
   static get DATABASE_URL() {
-    const port = 8000; // Change this to your server port
+    const port = 'https://js-goose.github.io/mws-restaurant-stage-1/data/restaurants.json'; // Change this to your server port
     // to work on GitHub change this to https://{your-username}.github.io/{your-project-name}/data/restaurants.json
     return `http://localhost:${port}/data/restaurants.json`; 
   }
