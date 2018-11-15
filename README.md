@@ -7,7 +7,11 @@ Here is the [live version of the app](https://js-goose.github.io/mws-restaurant-
 Below are some images of the app in action.
 
 [a map image of New York](https://github.com/JS-goose/mws-restaurant-stage-1/blob/master/img/preview1.png)
+
+
 [a listing of local restaurants in the New York area](https://github.com/JS-goose/mws-restaurant-stage-1/blob/master/img/preview2.png)
+
+
 [a listing of a restaurant in New York called The Dutch](https://github.com/JS-goose/mws-restaurant-stage-1/blob/master/img/preview3.png)
 
 This app was built with:
@@ -19,7 +23,7 @@ This app was built with:
 
 ## Leaflet.js and Mapbox:
 
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is a free to use map service much like Google Maps. 
+This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). If you wish to use/modify this app you'll need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is a free to use map service much like Google Maps. 
 
 ### Note about ES6
 
